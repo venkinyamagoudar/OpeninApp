@@ -19,6 +19,12 @@
 		24107ABB2BB6FB0E00923DD6 /* ClickData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107ABA2BB6FB0E00923DD6 /* ClickData.swift */; };
 		24107ABD2BB6FFF700923DD6 /* LinkAnalyticCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107ABC2BB6FFF700923DD6 /* LinkAnalyticCardView.swift */; };
 		24107ABF2BB7003100923DD6 /* LinkAnalyticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107ABE2BB7003100923DD6 /* LinkAnalyticsModel.swift */; };
+		24107AC42BB72ABD00923DD6 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AC32BB72ABD00923DD6 /* CoursesView.swift */; };
+		24107AC62BB72AE000923DD6 /* CampaignsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AC52BB72AE000923DD6 /* CampaignsView.swift */; };
+		24107AC82BB72AF000923DD6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AC72BB72AF000923DD6 /* ProfileView.swift */; };
+		24107ACF2BB72B8800923DD6 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107ACE2BB72B8800923DD6 /* AddView.swift */; };
+		24107AD12BB73BFC00923DD6 /* LinksType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AD02BB73BFC00923DD6 /* LinksType.swift */; };
+		24107AD42BB73C7600923DD6 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AD32BB73C7600923DD6 /* Extension+String.swift */; };
 		24C13F912BB68045002DCCF6 /* OpeninAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13F902BB68045002DCCF6 /* OpeninAppApp.swift */; };
 		24C13F932BB68045002DCCF6 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13F922BB68045002DCCF6 /* DashboardView.swift */; };
 		24C13F952BB68047002DCCF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C13F942BB68047002DCCF6 /* Assets.xcassets */; };
@@ -63,6 +69,12 @@
 		24107ABA2BB6FB0E00923DD6 /* ClickData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickData.swift; sourceTree = "<group>"; };
 		24107ABC2BB6FFF700923DD6 /* LinkAnalyticCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAnalyticCardView.swift; sourceTree = "<group>"; };
 		24107ABE2BB7003100923DD6 /* LinkAnalyticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAnalyticsModel.swift; sourceTree = "<group>"; };
+		24107AC32BB72ABD00923DD6 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
+		24107AC52BB72AE000923DD6 /* CampaignsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignsView.swift; sourceTree = "<group>"; };
+		24107AC72BB72AF000923DD6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		24107ACE2BB72B8800923DD6 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		24107AD02BB73BFC00923DD6 /* LinksType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksType.swift; sourceTree = "<group>"; };
+		24107AD32BB73C7600923DD6 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		24C13F8D2BB68045002DCCF6 /* OpeninApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpeninApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C13F902BB68045002DCCF6 /* OpeninAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninAppApp.swift; sourceTree = "<group>"; };
 		24C13F922BB68045002DCCF6 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -119,6 +131,7 @@
 				24107AB82BB6F6BD00923DD6 /* DashboardDataModel.swift */,
 				24107ABE2BB7003100923DD6 /* LinkAnalyticsModel.swift */,
 				24107ABA2BB6FB0E00923DD6 /* ClickData.swift */,
+				24107AD02BB73BFC00923DD6 /* LinksType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +142,74 @@
 				24107AB62BB6F19500923DD6 /* NetworkManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		24107AC02BB72A9700923DD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24107AA52BB6AE9200923DD6 /* MainTabView.swift */,
+				24107ACA2BB72B3600923DD6 /* LinkView */,
+				24107AC92BB72B2E00923DD6 /* CoursesView */,
+				24107ACD2BB72B6F00923DD6 /* AddView */,
+				24107ACB2BB72B4000923DD6 /* CampaignsView */,
+				24107ACC2BB72B5F00923DD6 /* ProfileView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24107AC92BB72B2E00923DD6 /* CoursesView */ = {
+			isa = PBXGroup;
+			children = (
+				24107AC32BB72ABD00923DD6 /* CoursesView.swift */,
+			);
+			path = CoursesView;
+			sourceTree = "<group>";
+		};
+		24107ACA2BB72B3600923DD6 /* LinkView */ = {
+			isa = PBXGroup;
+			children = (
+				24C13F922BB68045002DCCF6 /* DashboardView.swift */,
+				24107AA72BB6CC6400923DD6 /* GreetingUserView.swift */,
+				24C13FBA2BB69232002DCCF6 /* CustomChartView.swift */,
+				24107AAD2BB6D37D00923DD6 /* LinkAnalyticsView.swift */,
+				24107ABC2BB6FFF700923DD6 /* LinkAnalyticCardView.swift */,
+				24107AAF2BB6E29300923DD6 /* LinksListView.swift */,
+				24107AB12BB6E4C600923DD6 /* LinkListCardView.swift */,
+				24107AB32BB6EE1800923DD6 /* SupportButtonView.swift */,
+			);
+			path = LinkView;
+			sourceTree = "<group>";
+		};
+		24107ACB2BB72B4000923DD6 /* CampaignsView */ = {
+			isa = PBXGroup;
+			children = (
+				24107AC52BB72AE000923DD6 /* CampaignsView.swift */,
+			);
+			path = CampaignsView;
+			sourceTree = "<group>";
+		};
+		24107ACC2BB72B5F00923DD6 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				24107AC72BB72AF000923DD6 /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		24107ACD2BB72B6F00923DD6 /* AddView */ = {
+			isa = PBXGroup;
+			children = (
+				24107ACE2BB72B8800923DD6 /* AddView.swift */,
+			);
+			path = AddView;
+			sourceTree = "<group>";
+		};
+		24107AD22BB73C6400923DD6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				24107AD32BB73C7600923DD6 /* Extension+String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		24C13F842BB68044002DCCF6 = {
@@ -155,20 +236,13 @@
 			isa = PBXGroup;
 			children = (
 				24C13F902BB68045002DCCF6 /* OpeninAppApp.swift */,
-				24107AA52BB6AE9200923DD6 /* MainTabView.swift */,
-				24C13F922BB68045002DCCF6 /* DashboardView.swift */,
-				24107AA72BB6CC6400923DD6 /* GreetingUserView.swift */,
-				24C13FBA2BB69232002DCCF6 /* CustomChartView.swift */,
-				24107AAD2BB6D37D00923DD6 /* LinkAnalyticsView.swift */,
-				24107ABC2BB6FFF700923DD6 /* LinkAnalyticCardView.swift */,
-				24107AAF2BB6E29300923DD6 /* LinksListView.swift */,
-				24107AB12BB6E4C600923DD6 /* LinkListCardView.swift */,
-				24107AB32BB6EE1800923DD6 /* SupportButtonView.swift */,
+				24107AC02BB72A9700923DD6 /* View */,
 				24107AAC2BB6CD0F00923DD6 /* Model */,
 				24107AA92BB6CCC100923DD6 /* Viewodel */,
 				24107AB52BB6F16700923DD6 /* Manager */,
-				24C13F942BB68047002DCCF6 /* Assets.xcassets */,
+				24107AD22BB73C6400923DD6 /* Extensions */,
 				24C13FBC2BB69820002DCCF6 /* Fonts */,
+				24C13F942BB68047002DCCF6 /* Assets.xcassets */,
 				24C13F962BB68047002DCCF6 /* Preview Content */,
 			);
 			path = OpeninApp;
@@ -353,11 +427,17 @@
 				24107ABD2BB6FFF700923DD6 /* LinkAnalyticCardView.swift in Sources */,
 				24C13FBB2BB69232002DCCF6 /* CustomChartView.swift in Sources */,
 				24107ABF2BB7003100923DD6 /* LinkAnalyticsModel.swift in Sources */,
+				24107AD42BB73C7600923DD6 /* Extension+String.swift in Sources */,
 				24107AB72BB6F19500923DD6 /* NetworkManager.swift in Sources */,
 				24107AA82BB6CC6400923DD6 /* GreetingUserView.swift in Sources */,
+				24107ACF2BB72B8800923DD6 /* AddView.swift in Sources */,
+				24107AC82BB72AF000923DD6 /* ProfileView.swift in Sources */,
 				24107AAB2BB6CCF100923DD6 /* LinkViewModel.swift in Sources */,
+				24107AD12BB73BFC00923DD6 /* LinksType.swift in Sources */,
+				24107AC42BB72ABD00923DD6 /* CoursesView.swift in Sources */,
 				24107AB42BB6EE1800923DD6 /* SupportButtonView.swift in Sources */,
 				24107AB02BB6E29300923DD6 /* LinksListView.swift in Sources */,
+				24107AC62BB72AE000923DD6 /* CampaignsView.swift in Sources */,
 				24107AB22BB6E4C600923DD6 /* LinkListCardView.swift in Sources */,
 				24107AA62BB6AE9200923DD6 /* MainTabView.swift in Sources */,
 			);

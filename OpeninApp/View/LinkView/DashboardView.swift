@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct DashboardView: View {
-    @ObservedObject var viewModel: LinkViewModel = LinkViewModel()
+    @ObservedObject var viewModel: LinkViewModel
     var body: some View {
         VStack {
             dashboardNavigation
             dashboardBody
-        }
-        .onAppear{
-            viewModel.fetchData()
         }
         .background {
             Color.blue
@@ -75,5 +72,5 @@ struct DashboardView: View {
 }
 
 #Preview {
-    DashboardView()
+    DashboardView(viewModel: LinkViewModel())
 }

@@ -110,9 +110,3 @@ struct LinksListView: View {
 #Preview {
     LinksListView(viewModel: LinkViewModel())
 }
-
-enum LinksModel {
-    case topLinks
-    case recentLinks
-}
-

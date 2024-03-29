@@ -12,7 +12,7 @@ class LinkViewModel: ObservableObject {
     
     @Published var dashboardData: DashboardDataModel?
     @Published var error: NetworkManager.NetworkError?
-    @Published var selectedLinks: LinksModel = .topLinks
+    @Published var selectedLinks: LinksType = .topLinks
     @Published var searchbutton: Bool = false
     @Published var searchTerm: String = ""
     @Published var greeting: String = ""
