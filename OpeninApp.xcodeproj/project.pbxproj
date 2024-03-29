@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24107AA62BB6AE9200923DD6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AA52BB6AE9200923DD6 /* MainTabView.swift */; };
 		24C13F912BB68045002DCCF6 /* OpeninAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13F902BB68045002DCCF6 /* OpeninAppApp.swift */; };
-		24C13F932BB68045002DCCF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13F922BB68045002DCCF6 /* ContentView.swift */; };
+		24C13F932BB68045002DCCF6 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13F922BB68045002DCCF6 /* DashboardView.swift */; };
 		24C13F952BB68047002DCCF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C13F942BB68047002DCCF6 /* Assets.xcassets */; };
 		24C13F982BB68047002DCCF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C13F972BB68047002DCCF6 /* Preview Assets.xcassets */; };
 		24C13FA22BB68047002DCCF6 /* OpeninAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13FA12BB68047002DCCF6 /* OpeninAppTests.swift */; };
 		24C13FAC2BB68047002DCCF6 /* OpeninAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13FAB2BB68047002DCCF6 /* OpeninAppUITests.swift */; };
 		24C13FAE2BB68047002DCCF6 /* OpeninAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13FAD2BB68047002DCCF6 /* OpeninAppUITestsLaunchTests.swift */; };
+		24C13FBB2BB69232002DCCF6 /* CustomChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13FBA2BB69232002DCCF6 /* CustomChartView.swift */; };
+		24C13FC12BB69820002DCCF6 /* Figtree-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24C13FBD2BB69820002DCCF6 /* Figtree-Bold.ttf */; };
+		24C13FC22BB69820002DCCF6 /* Figtree-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24C13FBE2BB69820002DCCF6 /* Figtree-Medium.ttf */; };
+		24C13FC32BB69820002DCCF6 /* Figtree-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24C13FBF2BB69820002DCCF6 /* Figtree-Regular.ttf */; };
+		24C13FC42BB69820002DCCF6 /* Figtree-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24C13FC02BB69820002DCCF6 /* Figtree-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24107AA52BB6AE9200923DD6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		24C13F8D2BB68045002DCCF6 /* OpeninApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpeninApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C13F902BB68045002DCCF6 /* OpeninAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninAppApp.swift; sourceTree = "<group>"; };
-		24C13F922BB68045002DCCF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24C13F922BB68045002DCCF6 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		24C13F942BB68047002DCCF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24C13F972BB68047002DCCF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24C13F9D2BB68047002DCCF6 /* OpeninAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpeninAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,11 @@
 		24C13FA72BB68047002DCCF6 /* OpeninAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpeninAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C13FAB2BB68047002DCCF6 /* OpeninAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninAppUITests.swift; sourceTree = "<group>"; };
 		24C13FAD2BB68047002DCCF6 /* OpeninAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		24C13FBA2BB69232002DCCF6 /* CustomChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChartView.swift; sourceTree = "<group>"; };
+		24C13FBD2BB69820002DCCF6 /* Figtree-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-Bold.ttf"; sourceTree = "<group>"; };
+		24C13FBE2BB69820002DCCF6 /* Figtree-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-Medium.ttf"; sourceTree = "<group>"; };
+		24C13FBF2BB69820002DCCF6 /* Figtree-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-Regular.ttf"; sourceTree = "<group>"; };
+		24C13FC02BB69820002DCCF6 /* Figtree-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				24C13F902BB68045002DCCF6 /* OpeninAppApp.swift */,
-				24C13F922BB68045002DCCF6 /* ContentView.swift */,
+				24107AA52BB6AE9200923DD6 /* MainTabView.swift */,
+				24C13F922BB68045002DCCF6 /* DashboardView.swift */,
+				24C13FBA2BB69232002DCCF6 /* CustomChartView.swift */,
 				24C13F942BB68047002DCCF6 /* Assets.xcassets */,
+				24C13FBC2BB69820002DCCF6 /* Fonts */,
 				24C13F962BB68047002DCCF6 /* Preview Content */,
 			);
 			path = OpeninApp;
@@ -125,6 +140,18 @@
 				24C13FAD2BB68047002DCCF6 /* OpeninAppUITestsLaunchTests.swift */,
 			);
 			path = OpeninAppUITests;
+			sourceTree = "<group>";
+		};
+		24C13FBC2BB69820002DCCF6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				24C13FBD2BB69820002DCCF6 /* Figtree-Bold.ttf */,
+				24C13FBE2BB69820002DCCF6 /* Figtree-Medium.ttf */,
+				24C13FBF2BB69820002DCCF6 /* Figtree-Regular.ttf */,
+				24C13FC02BB69820002DCCF6 /* Figtree-SemiBold.ttf */,
+			);
+			name = Fonts;
+			path = ../../../../../Downloads/india/Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +258,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C13FC42BB69820002DCCF6 /* Figtree-SemiBold.ttf in Resources */,
 				24C13F982BB68047002DCCF6 /* Preview Assets.xcassets in Resources */,
+				24C13FC12BB69820002DCCF6 /* Figtree-Bold.ttf in Resources */,
+				24C13FC22BB69820002DCCF6 /* Figtree-Medium.ttf in Resources */,
 				24C13F952BB68047002DCCF6 /* Assets.xcassets in Resources */,
+				24C13FC32BB69820002DCCF6 /* Figtree-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C13F932BB68045002DCCF6 /* ContentView.swift in Sources */,
+				24C13F932BB68045002DCCF6 /* DashboardView.swift in Sources */,
 				24C13F912BB68045002DCCF6 /* OpeninAppApp.swift in Sources */,
+				24C13FBB2BB69232002DCCF6 /* CustomChartView.swift in Sources */,
+				24107AA62BB6AE9200923DD6 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
