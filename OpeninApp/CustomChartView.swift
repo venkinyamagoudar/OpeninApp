@@ -9,33 +9,19 @@ import SwiftUI
 import Charts
 
 struct CustomChartView: View {
-    @State var clickData =
-    [
-        ClickData(year: 2024, month: 1, day: 1, clickCount: 34),
-        ClickData(year: 2024, month: 2, day: 1, clickCount: 56),
-        ClickData(year: 2024, month: 3, day: 1, clickCount: 78),
-        ClickData(year: 2024, month: 4, day: 1, clickCount: 75),
-        ClickData(year: 2024, month: 5, day: 1, clickCount: 100),
-        ClickData(year: 2024, month: 6, day: 1, clickCount: 50),
-        ClickData(year: 2024, month: 7, day: 1, clickCount: 45),
-        ClickData(year: 2024, month: 8, day: 1, clickCount: 100),
-        ClickData(year: 2024, month: 9, day: 1, clickCount: 45)
-    ]
+    @ObservedObject var viewModel: LinkViewModel
+    private let curGradient = LinearGradient(
+        gradient: Gradient (
+            colors: [
+                .blue.opacity(0.3),
+                .white
+            ]
+        ),
+        startPoint: .top,
+        endPoint: .bottom
+    )
     
     var body: some View {
-        
-        let curColor = Color(hue: 0.33, saturation: 0.81, brightness: 0.76)
-        let curGradient = LinearGradient(
-            gradient: Gradient (
-                colors: [
-                    .blue.opacity(0.3),
-                    .white
-                ]
-            ),
-            startPoint: .top,
-            endPoint: .bottom
-        )
-        
         VStack {
             HStack {
                 Text("Overview")
@@ -60,13 +46,13 @@ struct CustomChartView: View {
             }
             .padding(.bottom, 10)
             Chart {
-                ForEach(clickData) { item in
+                ForEach(viewModel.clickData) { item in
                     LineMark(
                         x: .value("Month", item.date),
                         y: .value("Count", item.clickCount)
                     )
                 }
-                ForEach(clickData) { item in
+                ForEach(viewModel.clickData) { item in
                     AreaMark(
                         x: .value("Month", item.date),
                         y: .value("Count", item.clickCount)
@@ -93,16 +79,6 @@ struct CustomChartView: View {
 }
 
 #Preview {
-    CustomChartView()
+    CustomChartView(viewModel: LinkViewModel())
 }
 
-struct ClickData: Identifiable {
-    let id = UUID()
-    let date: Date
-    let clickCount: Int
-    
-    init(year: Int, month: Int, day: Int, clickCount: Int) {
-        self.clickCount = clickCount
-        self.date = Calendar.current.date(from: .init(year: year, month: month, day: day)) ?? Date()
-    }
-}

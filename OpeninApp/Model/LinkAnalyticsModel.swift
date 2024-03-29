@@ -5,4 +5,10 @@
 //  Created by Venkatesh Nyamagoudar on 3/29/24.
 //
 
-import Foundation
+import SwiftUI
+
+struct LinkAnalyticsModel {
+    var image: ImageResource
+    var cardTitle : String
+    var cardDescription: String
+}

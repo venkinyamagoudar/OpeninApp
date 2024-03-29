@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		24107AA62BB6AE9200923DD6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AA52BB6AE9200923DD6 /* MainTabView.swift */; };
+		24107AA82BB6CC6400923DD6 /* GreetingUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AA72BB6CC6400923DD6 /* GreetingUserView.swift */; };
+		24107AAB2BB6CCF100923DD6 /* LinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AAA2BB6CCF100923DD6 /* LinkViewModel.swift */; };
+		24107AAE2BB6D37D00923DD6 /* LinkAnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AAD2BB6D37D00923DD6 /* LinkAnalyticsView.swift */; };
+		24107AB02BB6E29300923DD6 /* LinksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AAF2BB6E29300923DD6 /* LinksListView.swift */; };
+		24107AB22BB6E4C600923DD6 /* LinkListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AB12BB6E4C600923DD6 /* LinkListCardView.swift */; };
+		24107AB42BB6EE1800923DD6 /* SupportButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AB32BB6EE1800923DD6 /* SupportButtonView.swift */; };
+		24107AB72BB6F19500923DD6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AB62BB6F19500923DD6 /* NetworkManager.swift */; };
+		24107AB92BB6F6BD00923DD6 /* DashboardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107AB82BB6F6BD00923DD6 /* DashboardDataModel.swift */; };
+		24107ABB2BB6FB0E00923DD6 /* ClickData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107ABA2BB6FB0E00923DD6 /* ClickData.swift */; };
+		24107ABD2BB6FFF700923DD6 /* LinkAnalyticCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107ABC2BB6FFF700923DD6 /* LinkAnalyticCardView.swift */; };
+		24107ABF2BB7003100923DD6 /* LinkAnalyticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24107ABE2BB7003100923DD6 /* LinkAnalyticsModel.swift */; };
 		24C13F912BB68045002DCCF6 /* OpeninAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13F902BB68045002DCCF6 /* OpeninAppApp.swift */; };
 		24C13F932BB68045002DCCF6 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13F922BB68045002DCCF6 /* DashboardView.swift */; };
 		24C13F952BB68047002DCCF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C13F942BB68047002DCCF6 /* Assets.xcassets */; };
@@ -41,6 +52,17 @@
 
 /* Begin PBXFileReference section */
 		24107AA52BB6AE9200923DD6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		24107AA72BB6CC6400923DD6 /* GreetingUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingUserView.swift; sourceTree = "<group>"; };
+		24107AAA2BB6CCF100923DD6 /* LinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewModel.swift; sourceTree = "<group>"; };
+		24107AAD2BB6D37D00923DD6 /* LinkAnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAnalyticsView.swift; sourceTree = "<group>"; };
+		24107AAF2BB6E29300923DD6 /* LinksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksListView.swift; sourceTree = "<group>"; };
+		24107AB12BB6E4C600923DD6 /* LinkListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListCardView.swift; sourceTree = "<group>"; };
+		24107AB32BB6EE1800923DD6 /* SupportButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportButtonView.swift; sourceTree = "<group>"; };
+		24107AB62BB6F19500923DD6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		24107AB82BB6F6BD00923DD6 /* DashboardDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDataModel.swift; sourceTree = "<group>"; };
+		24107ABA2BB6FB0E00923DD6 /* ClickData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickData.swift; sourceTree = "<group>"; };
+		24107ABC2BB6FFF700923DD6 /* LinkAnalyticCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAnalyticCardView.swift; sourceTree = "<group>"; };
+		24107ABE2BB7003100923DD6 /* LinkAnalyticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAnalyticsModel.swift; sourceTree = "<group>"; };
 		24C13F8D2BB68045002DCCF6 /* OpeninApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpeninApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C13F902BB68045002DCCF6 /* OpeninAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninAppApp.swift; sourceTree = "<group>"; };
 		24C13F922BB68045002DCCF6 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -83,6 +105,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24107AA92BB6CCC100923DD6 /* Viewodel */ = {
+			isa = PBXGroup;
+			children = (
+				24107AAA2BB6CCF100923DD6 /* LinkViewModel.swift */,
+			);
+			path = Viewodel;
+			sourceTree = "<group>";
+		};
+		24107AAC2BB6CD0F00923DD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24107AB82BB6F6BD00923DD6 /* DashboardDataModel.swift */,
+				24107ABE2BB7003100923DD6 /* LinkAnalyticsModel.swift */,
+				24107ABA2BB6FB0E00923DD6 /* ClickData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24107AB52BB6F16700923DD6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				24107AB62BB6F19500923DD6 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		24C13F842BB68044002DCCF6 = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +157,16 @@
 				24C13F902BB68045002DCCF6 /* OpeninAppApp.swift */,
 				24107AA52BB6AE9200923DD6 /* MainTabView.swift */,
 				24C13F922BB68045002DCCF6 /* DashboardView.swift */,
+				24107AA72BB6CC6400923DD6 /* GreetingUserView.swift */,
 				24C13FBA2BB69232002DCCF6 /* CustomChartView.swift */,
+				24107AAD2BB6D37D00923DD6 /* LinkAnalyticsView.swift */,
+				24107ABC2BB6FFF700923DD6 /* LinkAnalyticCardView.swift */,
+				24107AAF2BB6E29300923DD6 /* LinksListView.swift */,
+				24107AB12BB6E4C600923DD6 /* LinkListCardView.swift */,
+				24107AB32BB6EE1800923DD6 /* SupportButtonView.swift */,
+				24107AAC2BB6CD0F00923DD6 /* Model */,
+				24107AA92BB6CCC100923DD6 /* Viewodel */,
+				24107AB52BB6F16700923DD6 /* Manager */,
 				24C13F942BB68047002DCCF6 /* Assets.xcassets */,
 				24C13FBC2BB69820002DCCF6 /* Fonts */,
 				24C13F962BB68047002DCCF6 /* Preview Content */,
@@ -288,9 +345,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24107AAE2BB6D37D00923DD6 /* LinkAnalyticsView.swift in Sources */,
 				24C13F932BB68045002DCCF6 /* DashboardView.swift in Sources */,
+				24107AB92BB6F6BD00923DD6 /* DashboardDataModel.swift in Sources */,
 				24C13F912BB68045002DCCF6 /* OpeninAppApp.swift in Sources */,
+				24107ABB2BB6FB0E00923DD6 /* ClickData.swift in Sources */,
+				24107ABD2BB6FFF700923DD6 /* LinkAnalyticCardView.swift in Sources */,
 				24C13FBB2BB69232002DCCF6 /* CustomChartView.swift in Sources */,
+				24107ABF2BB7003100923DD6 /* LinkAnalyticsModel.swift in Sources */,
+				24107AB72BB6F19500923DD6 /* NetworkManager.swift in Sources */,
+				24107AA82BB6CC6400923DD6 /* GreetingUserView.swift in Sources */,
+				24107AAB2BB6CCF100923DD6 /* LinkViewModel.swift in Sources */,
+				24107AB42BB6EE1800923DD6 /* SupportButtonView.swift in Sources */,
+				24107AB02BB6E29300923DD6 /* LinksListView.swift in Sources */,
+				24107AB22BB6E4C600923DD6 /* LinkListCardView.swift in Sources */,
 				24107AA62BB6AE9200923DD6 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
