@@ -72,7 +72,6 @@ struct TabBarItem<V: View>: View {
     }
 }
 
-
 struct TabBarShape: Shape {
     func path(in rect: CGRect) -> Path {
         let h = -rect.maxY * 0.35
@@ -85,7 +84,6 @@ struct TabBarShape: Shape {
         return path
     }
 }
-
 
 struct AddTabItem: View {
     let height: CGFloat
