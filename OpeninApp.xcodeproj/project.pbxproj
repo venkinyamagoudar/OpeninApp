@@ -33,10 +33,6 @@
 		24C13FAC2BB68047002DCCF6 /* OpeninAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13FAB2BB68047002DCCF6 /* OpeninAppUITests.swift */; };
 		24C13FAE2BB68047002DCCF6 /* OpeninAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13FAD2BB68047002DCCF6 /* OpeninAppUITestsLaunchTests.swift */; };
 		24C13FBB2BB69232002DCCF6 /* CustomChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C13FBA2BB69232002DCCF6 /* CustomChartView.swift */; };
-		24DB14CF2BBABB2B003E5D39 /* Figtree-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24DB14CB2BBABB2B003E5D39 /* Figtree-Medium.ttf */; };
-		24DB14D02BBABB2B003E5D39 /* Figtree-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24DB14CC2BBABB2B003E5D39 /* Figtree-Bold.ttf */; };
-		24DB14D12BBABB2B003E5D39 /* Figtree-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24DB14CD2BBABB2B003E5D39 /* Figtree-SemiBold.ttf */; };
-		24DB14D22BBABB2B003E5D39 /* Figtree-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24DB14CE2BBABB2B003E5D39 /* Figtree-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,10 +82,10 @@
 		24C13FAB2BB68047002DCCF6 /* OpeninAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninAppUITests.swift; sourceTree = "<group>"; };
 		24C13FAD2BB68047002DCCF6 /* OpeninAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		24C13FBA2BB69232002DCCF6 /* CustomChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChartView.swift; sourceTree = "<group>"; };
-		24DB14CB2BBABB2B003E5D39 /* Figtree-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Figtree-Medium.ttf"; path = "../../19870714-[mukesh&bollepalli]-NYCSchools/OpenInAppAssignment-main/OpenInAppAssignment/Fonts/Figtree-Medium.ttf"; sourceTree = "<group>"; };
-		24DB14CC2BBABB2B003E5D39 /* Figtree-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Figtree-Bold.ttf"; path = "../../19870714-[mukesh&bollepalli]-NYCSchools/OpenInAppAssignment-main/OpenInAppAssignment/Fonts/Figtree-Bold.ttf"; sourceTree = "<group>"; };
-		24DB14CD2BBABB2B003E5D39 /* Figtree-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Figtree-SemiBold.ttf"; path = "../../19870714-[mukesh&bollepalli]-NYCSchools/OpenInAppAssignment-main/OpenInAppAssignment/Fonts/Figtree-SemiBold.ttf"; sourceTree = "<group>"; };
-		24DB14CE2BBABB2B003E5D39 /* Figtree-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Figtree-Regular.ttf"; path = "../../19870714-[mukesh&bollepalli]-NYCSchools/OpenInAppAssignment-main/OpenInAppAssignment/Fonts/Figtree-Regular.ttf"; sourceTree = "<group>"; };
+		24DB14D32BBABBB1003E5D39 /* Figtree-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-Bold.ttf"; sourceTree = "<group>"; };
+		24DB14D42BBABBB1003E5D39 /* Figtree-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-SemiBold.ttf"; sourceTree = "<group>"; };
+		24DB14D52BBABBB1003E5D39 /* Figtree-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-Regular.ttf"; sourceTree = "<group>"; };
+		24DB14D62BBABBB1003E5D39 /* Figtree-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,7 +237,7 @@
 				24107AA92BB6CCC100923DD6 /* Viewodel */,
 				24107AB52BB6F16700923DD6 /* Manager */,
 				24107AD22BB73C6400923DD6 /* Extensions */,
-				24C13FBC2BB69820002DCCF6 /* Fonts */,
+				24DB14D72BBABBBF003E5D39 /* Fonts */,
 				24C13F942BB68047002DCCF6 /* Assets.xcassets */,
 				24C13F962BB68047002DCCF6 /* Preview Content */,
 			);
@@ -273,16 +269,15 @@
 			path = OpeninAppUITests;
 			sourceTree = "<group>";
 		};
-		24C13FBC2BB69820002DCCF6 /* Fonts */ = {
+		24DB14D72BBABBBF003E5D39 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				24DB14CC2BBABB2B003E5D39 /* Figtree-Bold.ttf */,
-				24DB14CB2BBABB2B003E5D39 /* Figtree-Medium.ttf */,
-				24DB14CE2BBABB2B003E5D39 /* Figtree-Regular.ttf */,
-				24DB14CD2BBABB2B003E5D39 /* Figtree-SemiBold.ttf */,
+				24DB14D32BBABBB1003E5D39 /* Figtree-Bold.ttf */,
+				24DB14D62BBABBB1003E5D39 /* Figtree-Medium.ttf */,
+				24DB14D52BBABBB1003E5D39 /* Figtree-Regular.ttf */,
+				24DB14D42BBABBB1003E5D39 /* Figtree-SemiBold.ttf */,
 			);
-			name = Fonts;
-			path = ../../../../../Downloads/india/Fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,12 +384,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24DB14D02BBABB2B003E5D39 /* Figtree-Bold.ttf in Resources */,
 				24C13F982BB68047002DCCF6 /* Preview Assets.xcassets in Resources */,
 				24C13F952BB68047002DCCF6 /* Assets.xcassets in Resources */,
-				24DB14D12BBABB2B003E5D39 /* Figtree-SemiBold.ttf in Resources */,
-				24DB14D22BBABB2B003E5D39 /* Figtree-Regular.ttf in Resources */,
-				24DB14CF2BBABB2B003E5D39 /* Figtree-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
