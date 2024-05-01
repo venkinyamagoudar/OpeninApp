@@ -26,6 +26,7 @@ struct MainTabView: View {
                 }
                 TabBarItem(height: $tabViewHeight, content: {
                     CoursesView()
+                        .background(Color(uiColor: .secondarySystemBackground))
                 })
                 .tabItem {
                     Label("Courses", image: .courses)
@@ -33,12 +34,14 @@ struct MainTabView: View {
                 Spacer()
                 TabBarItem(height: $tabViewHeight, content: {
                     CampaignsView()
+                        .background(Color(uiColor: .secondarySystemBackground))
                 })
                 .tabItem {
                     Label("Campaigns", image: .campaigns)
                 }
                 TabBarItem(height: $tabViewHeight, content: {
                     ProfileView()
+                        .background(Color(uiColor: .secondarySystemBackground))
                 })
                 .tabItem {
                     Label("Profile", image: .profile)
@@ -98,7 +101,8 @@ struct AddTabItem: View {
         .ignoresSafeArea()
         .overlay(
             Button(action: {
-                
+                AddView()
+                    .background(Color(uiColor: .secondarySystemBackground))
             }, label: {
                 Circle().foregroundColor(.blue)
                     .frame(height: 65).aspectRatio(contentMode: .fit)
