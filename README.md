@@ -28,5 +28,6 @@ The project follows a Model-View-ViewModel (MVVM) architecture pattern.
 - **URLSession:** Apple's networking framework for making HTTP requests and fetching data from remote servers.
 - **JSONDecoder:** Used for parsing JSON data received from the API endpoint into Swift data models.
 - **UIKit:** Certain UIKit components like `UIApplication` are utilized for interacting with the iOS system.
+- **Caching:** Implementations of caching mechanisms for storing data in memory and disk respectively.Used FileManager for caching.
 
 These technologies combined enable the development of a responsive and efficient iOS application with a modern user interface and seamless data fetching capabilities.
