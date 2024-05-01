@@ -13,8 +13,8 @@ struct LinkListCardView: View {
         VStack{
             HStack {
                 HStack {
-                    if link.originalImage != nil {
-                        AsyncImage(url: URL(string: link.originalImage)) { image in
+                    if let imageURL = URL(string: link.originalImage) {
+                        AsyncImage(url: imageURL) { image in
                             image
                                 .resizable()
                                 .frame(width: 48, height: 48)

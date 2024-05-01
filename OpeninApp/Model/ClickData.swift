@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: ClickData Model
 struct ClickData: Identifiable {
     let id = UUID()
     let date: Date

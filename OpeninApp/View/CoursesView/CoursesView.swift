@@ -17,6 +17,7 @@ struct CoursesView: View {
                 .foregroundColor(.blue)
             Text("CoursesView")
         }
+        .padding()
     }
 }
 

@@ -7,7 +7,14 @@
 
 import Foundation
 
+/// Protocol defining the interface for a response handler.
 protocol ResponseHandler {
+    
+    /// Parses and decodes the response data into the specified model type.
+    /// - Parameters:
+    ///   - data: The data received in the response.
+    ///   - modelType: The type of the model to decode the data into.
+    /// - Returns: A tuple containing the decoded model and an optional error.
     func parseResponseDecode<T: Decodable>(
         data: Data,
         modelType: T.Type
@@ -15,6 +22,11 @@ protocol ResponseHandler {
 }
 
 extension ResponseHandler {
+    /// Default implementation of parsing and decoding response data.
+    /// - Parameters:
+    ///   - data: The data received in the response.
+    ///   - modelType: The type of the model to decode the data into.
+    /// - Returns: A tuple containing the decoded model and an optional error.
     func parseResponseDecode<T: Decodable>(
         data: Data,
         modelType: T.Type
@@ -28,4 +40,5 @@ extension ResponseHandler {
     }
 }
 
+/// Implementation of the `ResponseHandler` protocol using URLSession.
 class ResponseHandlerURLSession : ResponseHandler { }

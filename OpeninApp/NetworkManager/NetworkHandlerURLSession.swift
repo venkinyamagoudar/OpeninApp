@@ -8,16 +8,29 @@
 import Foundation
 import Combine
 
+/// Protocol defining the interface for a network handler.
 protocol NetworkHandler {
+    
+    /// Performs a data request using the specified URLRequest.
+    /// - Parameters:
+    ///   - urlRequest: The URLRequest object representing the request.
+    ///   - completionHandler: A closure to be called upon request completion, containing a Result enum with either success or failure.
     func requestDataAPI(
         urlRequest: URLRequest,
         completionHandler: @escaping (Result<DataSuccess, DataError>) -> Void
     )
     
+    /// Validates the response received from the network.
+    /// - Parameter urlResponse: The URLResponse object received from the network.
+    /// - Returns: A tuple indicating whether the response is successful and the status code.
     func validateResponse(_ urlResponse: URLResponse?) -> (success: Bool, statusCode: HttpStatusCode)
 }
 
+
 extension NetworkHandler {
+    /// Default implementation of response validation.
+    /// - Parameter urlResponse: The URLResponse object received from the network.
+    /// - Returns: A tuple indicating whether the response is successful and the status code.
     func validateResponse(_ urlResponse: URLResponse?) -> (success: Bool, statusCode: HttpStatusCode) {
         if let response = urlResponse as? HTTPURLResponse {
             guard APIManager.isValidHttp(code: response.statusCode) else {
@@ -29,9 +42,11 @@ extension NetworkHandler {
     }
 }
 
+/// Implementation of the `NetworkHandler` protocol using URLSession.
 class NetworkHandlerURLSession : NetworkHandler {
     private var cancellables = Set<AnyCancellable>()
-
+    
+    /// URLSession instance used for network requests.
     let urlSession: URLSession = {
         let urlSession = URLSession.shared
         urlSession.configuration.timeoutIntervalForRequest = 15
@@ -40,10 +55,11 @@ class NetworkHandlerURLSession : NetworkHandler {
     
     init() { }
     
-    func requestDataAPI(
-        urlRequest: URLRequest,
-        completionHandler: @escaping (Result<DataSuccess, DataError>) -> Void
-    ) {
+    /// Performs a data request using the specified URLRequest.
+    /// - Parameters:
+    ///   - urlRequest: The URLRequest object representing the request.
+    ///   - completionHandler: A closure to be called upon request completion, containing a Result enum with either success or failure.
+    func requestDataAPI(urlRequest: URLRequest,completionHandler: @escaping (Result<DataSuccess, DataError>) -> Void) {
         requestFuture(urlRequest: urlRequest).sink { completion in
             switch completion {
             case .failure(let err):
@@ -58,7 +74,10 @@ class NetworkHandlerURLSession : NetworkHandler {
         }
         .store(in: &cancellables)
     }
-        
+    
+    /// Performs a data request returning a Future.
+    /// - Parameter urlRequest: The URLRequest object representing the request.
+    /// - Returns: A Future object encapsulating the result of the request.
     func requestFuture(urlRequest: URLRequest) -> Future<DataSuccess, DataError> {
         return Future<DataSuccess, DataError>() { [weak self] promise in
             guard let self else { return }

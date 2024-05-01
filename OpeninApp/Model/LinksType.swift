@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: LinksType
 enum LinksType {
     case topLinks
     case recentLinks

@@ -7,16 +7,20 @@
 
 import SwiftUI
 
+/// Type alias representing HTTP status code.
 typealias HttpStatusCode = Int
 
+/// Type alias for a closure used as a completion handler for API requests.
 typealias NewResultHandler<T> = (_ result: T?, _ statusCode: HttpStatusCode?, _ error: DataError?) -> Void
 
+/// Enum representing success cases for data responses.
 enum DataSuccess {
-    case success(Data?, HttpStatusCode) // status code in range of 200 ... 299
+    case success(Data?, HttpStatusCode)
 }
 
+/// Enum representing various error cases for data responses.
 enum DataError: Error {
-    case invalidResponse(Data?, HttpStatusCode) // status code in range of 200 ... 299
+    case invalidResponse(Data?, HttpStatusCode)
     
     case invalidURL
     case internet

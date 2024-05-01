@@ -47,7 +47,7 @@ struct MainTabView: View {
             AddTabItem(height: tabViewHeight)
         }
         .onAppear{
-            viewModel.fetchData()
+            viewModel.fetchDataAPIManager()
         }
     }
 }
@@ -65,9 +65,9 @@ struct TabBarItem<V: View>: View {
                 .onAppear {
                     height = gp.safeAreaInsets.bottom
                 }
-                .onChange(of: gp.size) { _ in
+                .onChange(of: gp.size, initial: true, {
                     height = gp.safeAreaInsets.bottom
-                }
+                })
         }
     }
 }
@@ -108,9 +108,7 @@ struct AddTabItem: View {
                         .foregroundColor(.white))
                 
             })
-            .offset(y: -7.5)
-            
+                .offset(y: -7.5)
             , alignment: .bottom)
-        
     }
 }

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//MARK: LinkAnalyticsModel
 struct LinkAnalyticsModel {
     var image: ImageResource
     var cardTitle : String

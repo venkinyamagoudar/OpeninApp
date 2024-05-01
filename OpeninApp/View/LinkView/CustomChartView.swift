@@ -28,7 +28,7 @@ struct CustomChartView: View {
                     .font(.custom("Figtree-Regular", size: 14))
                 Spacer()
                 HStack {
-                    Text("Jan 24 - Aug 24")
+                    Text("22 Aug - 23 Sep")
                         .foregroundStyle(.black)
                         .font(.custom("Figtree-Regular", size: 12))
                     Image(systemName: "clock")
